@@ -6,8 +6,5 @@ SRCS     = calculator.cpp
 $(TARGET): $(SRCS)
 	$(CXX) $(CXXFLAGS) $(SRCS) -o $(TARGET)
 
-run: $(TARGET)
-	./$(TARGET) testcases.txt
-
 clean:
 	rm -f $(TARGET)
